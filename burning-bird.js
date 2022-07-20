@@ -7,7 +7,7 @@ http
   .createServer(function (request, response) {
     let name = url.parse(request.url, true).query.name;
 
-    if (name === undefined) name = ' world';
+    if (name === undefined) name = 'world';
 
     if (name == 'burningbird') {
       fs.stat(file, function (err, stat) {
